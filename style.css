@@ -1,12 +1,24 @@
-<style>
+
 
  /* Main stuff */
 
 body {
 	font-family: 'Roboto', sans-serif;
-	font-size: 181px;
 }
 
+a:visited {
+	text-decoration: none;
+	color: black;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	opacity: 0.5;
+}
 
  /* Nav menu */
 
@@ -16,10 +28,41 @@ body {
 .menu li {
   padding: 4px;
   list-style-type: none;
+  font-size: 18px;
 }
 .main_menu {
     float: right;
 }
+
+ /* Big logo */
  
 
-</style>
+.main_image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  padding: 2rem;
+}
+
+ 
+ 
+ 
+ 
+ /* Footer */
+ 
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;            /* Footer height */
+}
