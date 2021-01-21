@@ -1,0 +1,25 @@
+<style>
+
+ /* Main stuff */
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 181px;
+}
+
+
+ /* Nav menu */
+
+.menu ul {
+  padding: 10px;
+}
+.menu li {
+  padding: 4px;
+  list-style-type: none;
+}
+.main_menu {
+    float: right;
+}
+ 
+
+</style>
