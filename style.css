@@ -2,9 +2,22 @@
 
  /* Main stuff */
 
-body {
-	font-family: 'Roboto', sans-serif;
+* {
+ box-sizing: border-box;
 }
+*:before,
+*:after {
+ box-sizing: border-box;
+}
+html,
+body {
+ height: 100%;
+ position: relative;
+ 	font-family: 'Roboto', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
 
 a:visited {
 	text-decoration: none;
@@ -20,10 +33,23 @@ a:hover {
 	opacity: 0.5;
 }
 
+.background-umbral {
+  width: 40%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#content-wrap {
+  clear: both;
+}
+
  /* Nav menu */
 
 .menu ul {
   padding: 10px;
+  padding-right: 30px;
 }
 .menu li {
   padding: 4px;
@@ -45,24 +71,293 @@ a:hover {
   padding: 2rem;
 }
 
+ .title {
+  text-transform: uppercase;
+  writing-mode: sideways-lr;
+  text-orientation: mixed;
+  position: absolute;
+  top: 0;
+  padding: 14px;
+  font-size: 50px;
+  font-weight: normal;
+  letter-spacing: 8px;
+}
+ .subtitle {
+  position: absolute;
+  top: 11px;
+  left: 140px;
+  letter-spacing: 9px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+ 
+ /* About page */
  
  
+.about_image {
+  width: auto;
+  height: 620px;
+  position: absolute;
+  top: 24%;
+  left: 43%;
+  transform: rotate(39deg);
+  z-index: -1;
+}
+
+.text-right {
+  width: auto;
+  padding: 2rem;
+  line-height: 32px;
+}
+
+.image-left {
+  flex-basis: 100%;
+}
+
+.about {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: row;
+  width: 50%;
+}
+
+
+ 
+.text-right h2 {
+  font-weight: normal;
+  letter-spacing: 3px;
+}
+
+.text-right h2:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 13%; /* Change this to whatever width you want. */
+    padding-top: 14px; /* This creates some space between the element and the border. */
+    border-bottom: 6px solid black; /* This creates the border. Replace black with whatever color you want. */
+    margin-left: 1px;
+}
+
+
+/* Nosotros */
+
+
+.flex-items:nth-child(1) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 1;
+}
+
+.flex-items:nth-child(2) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 2;
+  padding-top: 9px;
+}
+
+.flex-items:nth-child(3) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 3;
+}
+
+.flex-items:nth-child(4) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 4;
+}
+
+.flex-items:nth-child(5) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 5;
+}
+
+.flex-items:nth-child(6) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 6;
+}
+
+.flex-items img {
+  width: 100%;
+  filter: grayscale(100%);
+}
+ 
+ .column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+ 
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+ 
+.flex-items {
+  padding: 2rem;
+  width: 36%;
+}
+ .flex-items h3 {
+  font-weight: normal;
+  letter-spacing: 4px;
+  color: #246321;
+}
+ 
+.flex-items p:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 13%; /* Change this to whatever width you want. */
+    padding-top: 14px; /* This creates some space between the element and the border. */
+    border-bottom: 6px solid black; /* This creates the border. Replace black with whatever color you want. */
+    margin-left: 1px;
+}
+ 
+ /* Servicios */
+ 
+ 
+.services {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  width: -moz-fit-content;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.team_img {
+  width: 400px;
+  filter: grayscale(100%);
+}
+
+.items {
+  padding: 0.7rem;
+}
+
+.services ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.services li {
+  margin-left: 23px;
+  letter-spacing: 2px;
+}
+.services h2 {
+  font-weight: normal;
+}
+ 
+.services h3 {
+  font-weight: normal;
+  letter-spacing: 2px;
+  color: #246321;
+}
+ 
+.services h2:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 13%; /* Change this to whatever width you want. */
+    padding-top: 14px; /* This creates some space between the element and the border. */
+    border-bottom: 6px solid black; /* This creates the border. Replace black with whatever color you want. */
+    margin-left: 1px;
+}
  
  
  /* Footer */
  
 #page-container {
-  position: relative;
-  min-height: 100vh;
+ min-height: 100vh; /* will cover the 100% of viewport */
+ overflow: hidden;
+ display: block;
+ position: relative;
+ padding-bottom: 200px; /* height of your footer */
 }
 
-#content-wrap {
-  padding-bottom: 2.5rem;    /* Footer height */
+footer {
+ position: absolute;
+ bottom: 0;
+ width: 100%;
 }
 
-#footer {
+.main_footer p {
+  padding: 0;
+  margin: 0;
+  color: white;
+  text-transform: lowercase;
+  margin-bottom: 5px;
+}
+
+.main_footer {
+  padding: 2rem;
+  background-color: #246321;
+  color: white;
+  display: -webkit-box;
+}
+
+.main_footer a {
+  color: white !important;
+  letter-spacing: 2px;
+}
+
+.main_footer h3 {
+	color: white;
+	letter-spacing: 5px;
+	font-weight: normal;
+	writing-mode: sideways-lr;
+	text-orientation: mixed;
+}
+.tagline {
+  width: 320px;
   position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 2.5rem;            /* Footer height */
+  right: 60px;
+  text-transform: uppercase !important;
+  letter-spacing: 4px;
+  line-height: 30px;
 }
+
+/* Animation */
+
+.fade-in {
+animation: fadeIn ease 20s;
+-webkit-animation: fadeIn ease 20s;
+-moz-animation: fadeIn ease 20s;
+-o-animation: fadeIn ease 20s;
+-ms-animation: fadeIn ease 20s;
+}
+
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
