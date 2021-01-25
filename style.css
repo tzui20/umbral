@@ -71,16 +71,16 @@ a:hover {
   padding: 2rem;
 }
 
- .title {
+.title {
   text-transform: uppercase;
-  writing-mode: sideways-lr;
-  text-orientation: mixed;
+  writing-mode: tb;
   position: absolute;
   top: 0;
   padding: 14px;
   font-size: 50px;
   font-weight: normal;
   letter-spacing: 8px;
+  transform: rotate(180deg);
 }
  .subtitle {
   position: absolute;
@@ -334,8 +334,8 @@ footer {
 	color: white;
 	letter-spacing: 5px;
 	font-weight: normal;
-	writing-mode: sideways-lr;
-	text-orientation: mixed;
+	writing-mode: tb;
+	transform: rotate(180deg);
 }
 .tagline {
   width: 320px;
