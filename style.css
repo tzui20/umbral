@@ -93,21 +93,18 @@ a:hover {
  
  /* About page */
  
- 
-.about_image {
-  width: auto;
-  height: 620px;
-  position: absolute;
-  top: 24%;
-  left: 43%;
-  transform: rotate(39deg);
-  z-index: -1;
+ .team_img {
+  width: 400px;
+  filter: grayscale(100%);
 }
+
 
 .text-right {
   width: auto;
   padding: 2rem;
   line-height: 32px;
+  position: relative;
+  top: -88px;
 }
 
 .image-left {
@@ -219,6 +216,8 @@ a:hover {
   margin-right: auto;
   justify-content: center;
   padding-bottom: 40px;
+  position: relative;
+  top: -61px;
 }
  
 .flex-items {
@@ -254,12 +253,19 @@ a:hover {
   justify-content: space-between;
   flex-wrap: wrap;
   margin-bottom: 25px;
+  position: relative;
+  top: -65px;
+}
+.about_image {
+  width: auto;
+  height: 620px;
+  position: absolute;
+  top: 10%;
+  left: 29%;
+  transform: rotate(39deg);
+  z-index: -1;
 }
 
-.team_img {
-  width: 400px;
-  filter: grayscale(100%);
-}
 
 .items {
   padding: 0.7rem;
@@ -303,6 +309,8 @@ a:hover {
   max-width: 960px;
   margin-right: auto;
   margin-left: auto;
+  position: relative;
+  top: -51px;
 }
 .masonry {
   columns: 1;
