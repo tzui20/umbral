@@ -97,7 +97,10 @@ a:hover {
   width: 400px;
   filter: grayscale(100%);
 }
-
+.text-logo {
+  width: 40%;
+  float: right;
+}
 
 .text-right {
   width: auto;
@@ -156,7 +159,6 @@ a:hover {
   flex-basis: auto;
   align-self: auto;
   order: 2;
-  padding-top: 9px;
 }
 
 .flex-items:nth-child(3) {
@@ -198,6 +200,8 @@ a:hover {
 .flex-items img {
   width: 100%;
   filter: grayscale(100%);
+  -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 0%, 100% 80%, 80% 100%, 0% 100%, 0% 86%, 0% 20%);
+  clip-path: polygon(20% 0%, 80% 0%, 100% 0%, 100% 80%, 80% 100%, 0% 100%, 0% 86%, 0% 20%);
 }
  
  .column {
@@ -210,8 +214,7 @@ a:hover {
 .row {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
+  width: 70%;
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
@@ -223,6 +226,7 @@ a:hover {
  
 .flex-items {
   padding: 2rem;
+  padding-left: 0;
   width: 36%;
 }
  .flex-items h3 {
@@ -466,4 +470,97 @@ animation: fadeIn ease 20s;
 0% {opacity:0;}
 100% {opacity:1;}
 }
+
+
+/* Responsive */
+
+
+/* style.css | file:///C:/Users/EbnerP/OneDrive%20-%20Reed%20Elsevier%20Group%20ICO%20Reed%20Elsevier%20Inc/Desktop/umbral/style.css */
+
+
+@media (max-width: 480px) {
+.about {
+  width: 100%; 
+  margin-top: 230px;
+}
+.subtitle {
+  position: absolute;
+  top: 11px;
+  left: 140px;
+  letter-spacing: 9px;
+  font-weight: normal;
+  text-transform: uppercase;
+  display: none;
+}
+.title {
+  position: absolute;
+}
+.tagline {
+  width: 320px;
+  position: absolute;
+  right: 60px;
+  text-transform: uppercase !important;
+  letter-spacing: 4px;
+  line-height: 30px;
+  visibility: hidden;
+}
+.text-logo {
+  width: 55%;
+  float: right;
+}
+.text-right {
+  width: auto;
+  padding: 2rem;
+  line-height: 32px;
+  position: relative;
+  top: 0;
+}
+
+
+.row {
+
+  flex-direction: column;
+  width: 100%;
+  padding-bottom: 55px;
+  top: 61px;
+}
+
+.flex-items {
+  width: 100%;
+  padding-left: 2rem;
+}
+.masonry-wrapper {
+  padding: 1.5em;
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  top: 68px;
+  padding-bottom: 100px;
+}
+
+
+.services {
+  top: 67px;
+  padding-bottom: 30px;
+  padding-left: 2rem;
+}
+
+.about_image {
+  opacity: 0.1;
+  left: 0;
+}
+.background-umbral {
+  width: 63%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+}
+
+
+
 
