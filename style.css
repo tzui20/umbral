@@ -559,6 +559,12 @@ animation: fadeIn ease 20s;
   padding-top: 80px;
   padding-bottom: 40px;
 }
+.menu li {
+  padding: 4px;
+  list-style-type: none;
+  font-size: 25px;
+  margin-bottom: 3px;
+}
 }
 
 
