@@ -123,6 +123,7 @@ a:hover {
 	/* This creates the border. Replace black with whatever color you want. */
 	margin-left: 1px;
 }
+
 /* Nosotros */
 
 .flex-items:nth-child(1) {
@@ -245,6 +246,7 @@ a:hover {
 	left: 29%;
 	transform: rotate(39deg);
 	z-index: -1;
+	opacity: 0.2;
 }
 .items {
 	padding: 0.7rem;
